@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Daily News</div>
+        <div class="nav-links">
+            <a href="#" data-category="general">Home</a>
+            <a href="#" data-category="sports">Sports</a>
+            <a href="#" data-category="politics">Politics</a>
+        </div>
+    </div>
+                      
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for news..." />
+        <button id="search-button">Search</button>
+    </div>
+    
+    <div class="hero">
+        <h1 id="hero-title">
+            <span id="element"></span>
+        </h1>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Vikash Gupta", "Welcome To Daily News"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+    
+    
+    <div class="content" id="news-container"></div>
+    
+    
+
+    <script src="api.js"></script>
+</body>
+</html>
